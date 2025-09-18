@@ -1,0 +1,11 @@
+[project]
+name = "calery"
+version = "0.1.0"
+description = "A calendar and personal assistant you can talk to"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.9.2",
+]
+
+[tool.uv]
