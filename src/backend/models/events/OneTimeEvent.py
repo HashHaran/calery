@@ -3,10 +3,11 @@ from typing import List
 from pydantic import BaseModel
 
 from src.backend.models.events import TimeFrame
-from src.backend.models.users import User
+from src.backend.models.users.User import User
 
 
 class OneTimeEvent(BaseModel):
+    id: str
     time_frame: TimeFrame
     scheduled_by: User
     _participants: List[User]
